@@ -8,7 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 // import componentes
-import CreateUserScreen from "./screens/CreateUserScreen"
+import RegistryScreen from "./screens/RegistryScreen"
 import UserList from "./screens/UserList"
 import DetailUserScreen from "./screens/DetailUserScreen"
 
@@ -17,8 +17,8 @@ const Stack = createStackNavigator()
 function MyStack() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name = 'RegistryScreen' component = {RegistryScreen}/>
       <Stack.Screen name = 'UserList' component = {UserList}/>
-      <Stack.Screen name = 'CreateUserScreen' component = {CreateUserScreen}/>
       <Stack.Screen name = 'DetailUserScreen' component = {DetailUserScreen}/>
     </Stack.Navigator>
   )
