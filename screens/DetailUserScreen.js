@@ -66,7 +66,7 @@ const DetailUserScreen = (props) => {
       phone: user.phone,
     });
     setUser(initialState);
-    props.navigation.navigate("UsersList");
+    props.navigation.navigate("UserList");
   };
 
   useEffect(() => {

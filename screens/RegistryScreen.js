@@ -20,8 +20,8 @@ const RegistryScreen = (props) =>{
     };
 
     const saveNewUser = async () => {
-        if(state.name === "") {
-            alert ("Ingrese un nombre")
+        if(state.name === "" || state.email==="" || state.lastname==="" || state.user==="" || state.pssword==="" || state.phone==="") {
+            alert ("Ingrese todos los datos")
         } else {
             try {
                 await firebase.db.collection("users").add({
@@ -71,8 +71,6 @@ const RegistryScreen = (props) =>{
           <View style={styles.inputGroup}>
             <TextInput
               placeholder="Email"
-              multiline={true}
-              numberOfLines={4}
               onChangeText={(value) => handleChangeText(value, "email")}
               value={state.email}
             />
@@ -81,7 +79,8 @@ const RegistryScreen = (props) =>{
         {/* Phone Input */}
           <View style={styles.inputGroup}>
             <TextInput
-              placeholder="phone"
+              placeholder="Phone"
+              keyboardType='number-pad'
               onChangeText={(value) => handleChangeText(value, "phone")}
               value={state.phone}
             />

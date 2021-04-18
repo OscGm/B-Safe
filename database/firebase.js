@@ -2,13 +2,13 @@ import firebase from "firebase";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBGM5VKOk2jYK71D820efkkpxuGxqKHLPY",
-  authDomain: "b-safe-4fa5f.firebaseapp.com",
-  projectId: "b-safe-4fa5f",
-  storageBucket: "b-safe-4fa5f.appspot.com",
-  messagingSenderId: "756051532845",
-  appId: "1:756051532845:web:04e3cbd5fb0f882561eca4",
-  measurementId: "G-EJK32EF4M5"
+  apiKey: "AIzaSyAKswRDDXF0S2vp24TiAVaF9EhN2N0Ht-I",
+  authDomain: "b-safe-system.firebaseapp.com",
+  projectId: "b-safe-system",
+  storageBucket: "b-safe-system.appspot.com",
+  messagingSenderId: "838808803990",
+  appId: "1:838808803990:web:d2b4d439a7bd12223580b7",
+  measurementId: "G-DRJ8FRKV0X"
 };
 
 // Initialize Firebase
