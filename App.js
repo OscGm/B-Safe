@@ -11,12 +11,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import RegistryScreen from "./screens/RegistryScreen"
 import UserList from "./screens/UserList"
 import DetailUserScreen from "./screens/DetailUserScreen"
+import LoginScreen from './screens/LoginScreen'
 
 const Stack = createStackNavigator()
 
 function MyStack() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name = 'LoginScreen' component = {LoginScreen}/>
       <Stack.Screen name = 'UserList' component = {UserList}/>
       <Stack.Screen name = 'RegistryScreen' component = {RegistryScreen}/>
       <Stack.Screen name = 'DetailUserScreen' component = {DetailUserScreen}/>

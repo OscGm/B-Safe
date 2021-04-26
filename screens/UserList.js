@@ -38,7 +38,7 @@ const UserList = (props) =>{
                 return(
                     <ListItem key={user.id} bottomDivider onPress={ () => { props.navigation.navigate( 'DetailUserScreen', { userId: user.id })}}>
                         <ListItem.Chevron />
-                        <Avatar rounded source={{uri:'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',}}/>
+                        <Avatar rounded />
                     <ListItem.Content>
                         <ListItem.Title>{user.name}</ListItem.Title>
                         <ListItem.Subtitle>{user.email}</ListItem.Subtitle>
