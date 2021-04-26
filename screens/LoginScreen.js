@@ -57,7 +57,7 @@ const LoginScreen = (props) => {
             </View>
             <View>
                 <Button 
-                    title='Create User' 
+                    title='Login' 
                     onPress={() => verify()}
                 />
             </View>
