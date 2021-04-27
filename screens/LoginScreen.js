@@ -61,6 +61,12 @@ const LoginScreen = (props) => {
                     onPress={() => verify()}
                 />
             </View>
+            <View>
+                <Button 
+                    title='Create User' 
+                    onPress={() => props.navigation.navigate('RegistryScreen')}
+                />
+            </View>
         </ScrollView>
     )
 }

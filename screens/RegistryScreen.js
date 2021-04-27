@@ -32,7 +32,7 @@ const RegistryScreen = (props) =>{
                     phone: state.phone,
                     pssword: state.pssword,
                 });
-                props.navigation.navigate('UserList')
+                props.navigation.navigate('LoginScreen')
             } catch (error) {
                 console.log(error);
             }
